@@ -1,0 +1,613 @@
+2025-06-17 10:35:15.078 +05:45 [INF] Starting RateLimit.HttpApi.Host.
+2025-06-17 10:35:34.373 +05:45 [INF] Loaded ABP modules:
+2025-06-17 10:35:34.374 +05:45 [INF] - RateLimit.RateLimitHttpApiHostModule
+2025-06-17 10:35:34.374 +05:45 [INF]   - RateLimit.RateLimitHttpApiModule
+2025-06-17 10:35:34.374 +05:45 [INF]     - RateLimit.RateLimitApplicationContractsModule
+2025-06-17 10:35:34.374 +05:45 [INF]       - RateLimit.RateLimitDomainSharedModule
+2025-06-17 10:35:34.374 +05:45 [INF]         - Volo.Abp.AuditLogging.AbpAuditLoggingDomainSharedModule
+2025-06-17 10:35:34.374 +05:45 [INF]           - Volo.Abp.Validation.AbpValidationModule
+2025-06-17 10:35:34.374 +05:45 [INF]             - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2025-06-17 10:35:34.374 +05:45 [INF]             - Volo.Abp.Localization.AbpLocalizationModule
+2025-06-17 10:35:34.374 +05:45 [INF]               - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2025-06-17 10:35:34.374 +05:45 [INF]               - Volo.Abp.Settings.AbpSettingsModule
+2025-06-17 10:35:34.374 +05:45 [INF]                 - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2025-06-17 10:35:34.374 +05:45 [INF]                 - Volo.Abp.Security.AbpSecurityModule
+2025-06-17 10:35:34.374 +05:45 [INF]                 - Volo.Abp.Data.AbpDataModule
+2025-06-17 10:35:34.374 +05:45 [INF]                   - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2025-06-17 10:35:34.374 +05:45 [INF]                   - Volo.Abp.Uow.AbpUnitOfWorkModule
+2025-06-17 10:35:34.374 +05:45 [INF]                   - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+2025-06-17 10:35:34.374 +05:45 [INF]               - Volo.Abp.Threading.AbpThreadingModule
+2025-06-17 10:35:34.374 +05:45 [INF]         - Volo.Abp.BackgroundJobs.AbpBackgroundJobsDomainSharedModule
+2025-06-17 10:35:34.374 +05:45 [INF]         - Volo.Abp.FeatureManagement.AbpFeatureManagementDomainSharedModule
+2025-06-17 10:35:34.374 +05:45 [INF]           - Volo.Abp.Json.SystemTextJson.AbpJsonSystemTextJsonModule
+2025-06-17 10:35:34.374 +05:45 [INF]             - Volo.Abp.Json.AbpJsonAbstractionsModule
+2025-06-17 10:35:34.374 +05:45 [INF]             - Volo.Abp.Timing.AbpTimingModule
+2025-06-17 10:35:34.374 +05:45 [INF]         - Volo.Abp.Identity.AbpIdentityDomainSharedModule
+2025-06-17 10:35:34.374 +05:45 [INF]           - Volo.Abp.Users.AbpUsersDomainSharedModule
+2025-06-17 10:35:34.374 +05:45 [INF]           - Volo.Abp.Features.AbpFeaturesModule
+2025-06-17 10:35:34.374 +05:45 [INF]             - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2025-06-17 10:35:34.374 +05:45 [INF]               - Volo.Abp.MultiTenancy.AbpMultiTenancyAbstractionsModule
+2025-06-17 10:35:34.374 +05:45 [INF]             - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+2025-06-17 10:35:34.374 +05:45 [INF]         - Volo.Abp.OpenIddict.AbpOpenIddictDomainSharedModule
+2025-06-17 10:35:34.374 +05:45 [INF]         - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2025-06-17 10:35:34.374 +05:45 [INF]         - Volo.Abp.SettingManagement.AbpSettingManagementDomainSharedModule
+2025-06-17 10:35:34.374 +05:45 [INF]         - Volo.Abp.TenantManagement.AbpTenantManagementDomainSharedModule
+2025-06-17 10:35:34.374 +05:45 [INF]       - Volo.Abp.Account.AbpAccountApplicationContractsModule
+2025-06-17 10:35:34.374 +05:45 [INF]         - Volo.Abp.Identity.AbpIdentityApplicationContractsModule
+2025-06-17 10:35:34.374 +05:45 [INF]           - Volo.Abp.Users.AbpUsersAbstractionModule
+2025-06-17 10:35:34.374 +05:45 [INF]             - Volo.Abp.EventBus.AbpEventBusModule
+2025-06-17 10:35:34.374 +05:45 [INF]               - Volo.Abp.Json.AbpJsonModule
+2025-06-17 10:35:34.374 +05:45 [INF]               - Volo.Abp.Guids.AbpGuidsModule
+2025-06-17 10:35:34.374 +05:45 [INF]               - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2025-06-17 10:35:34.374 +05:45 [INF]               - Volo.Abp.DistributedLocking.AbpDistributedLockingAbstractionsModule
+2025-06-17 10:35:34.374 +05:45 [INF]           - Volo.Abp.Authorization.AbpAuthorizationModule
+2025-06-17 10:35:34.374 +05:45 [INF]           - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationContractsModule
+2025-06-17 10:35:34.374 +05:45 [INF]             - Volo.Abp.Application.AbpDddApplicationContractsModule
+2025-06-17 10:35:34.374 +05:45 [INF]               - Volo.Abp.Auditing.AbpAuditingContractsModule
+2025-06-17 10:35:34.374 +05:45 [INF]       - Volo.Abp.FeatureManagement.AbpFeatureManagementApplicationContractsModule
+2025-06-17 10:35:34.374 +05:45 [INF]       - Volo.Abp.SettingManagement.AbpSettingManagementApplicationContractsModule
+2025-06-17 10:35:34.374 +05:45 [INF]       - Volo.Abp.TenantManagement.AbpTenantManagementApplicationContractsModule
+2025-06-17 10:35:34.374 +05:45 [INF]     - Volo.Abp.Account.AbpAccountHttpApiModule
+2025-06-17 10:35:34.374 +05:45 [INF]       - Volo.Abp.Identity.AbpIdentityHttpApiModule
+2025-06-17 10:35:34.374 +05:45 [INF]         - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2025-06-17 10:35:34.374 +05:45 [INF]           - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2025-06-17 10:35:34.374 +05:45 [INF]             - Volo.Abp.Auditing.AbpAuditingModule
+2025-06-17 10:35:34.374 +05:45 [INF]             - Volo.Abp.Http.AbpHttpModule
+2025-06-17 10:35:34.374 +05:45 [INF]               - Volo.Abp.Http.AbpHttpAbstractionsModule
+2025-06-17 10:35:34.374 +05:45 [INF]               - Volo.Abp.Minify.AbpMinifyModule
+2025-06-17 10:35:34.374 +05:45 [INF]             - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2025-06-17 10:35:34.374 +05:45 [INF]             - Volo.Abp.AspNetCore.AbpAspNetCoreAbstractionsModule
+2025-06-17 10:35:34.374 +05:45 [INF]           - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2025-06-17 10:35:34.374 +05:45 [INF]           - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2025-06-17 10:35:34.374 +05:45 [INF]           - Volo.Abp.UI.Navigation.AbpUiNavigationModule
+2025-06-17 10:35:34.374 +05:45 [INF]             - Volo.Abp.UI.AbpUiModule
+2025-06-17 10:35:34.374 +05:45 [INF]           - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2025-06-17 10:35:34.374 +05:45 [INF]           - Volo.Abp.Application.AbpDddApplicationModule
+2025-06-17 10:35:34.374 +05:45 [INF]             - Volo.Abp.Domain.AbpDddDomainModule
+2025-06-17 10:35:34.374 +05:45 [INF]               - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2025-06-17 10:35:34.374 +05:45 [INF]               - Volo.Abp.Specifications.AbpSpecificationsModule
+2025-06-17 10:35:34.374 +05:45 [INF]               - Volo.Abp.Caching.AbpCachingModule
+2025-06-17 10:35:34.374 +05:45 [INF]                 - Volo.Abp.Serialization.AbpSerializationModule
+2025-06-17 10:35:34.374 +05:45 [INF]               - Volo.Abp.Domain.AbpDddDomainSharedModule
+2025-06-17 10:35:34.374 +05:45 [INF]     - Volo.Abp.PermissionManagement.HttpApi.AbpPermissionManagementHttpApiModule
+2025-06-17 10:35:34.374 +05:45 [INF]     - Volo.Abp.TenantManagement.AbpTenantManagementHttpApiModule
+2025-06-17 10:35:34.374 +05:45 [INF]       - Volo.Abp.FeatureManagement.AbpFeatureManagementHttpApiModule
+2025-06-17 10:35:34.374 +05:45 [INF]     - Volo.Abp.SettingManagement.AbpSettingManagementHttpApiModule
+2025-06-17 10:35:34.374 +05:45 [INF]   - Volo.Abp.Autofac.AbpAutofacModule
+2025-06-17 10:35:34.374 +05:45 [INF]     - Volo.Abp.Castle.AbpCastleCoreModule
+2025-06-17 10:35:34.374 +05:45 [INF]   - Volo.Abp.Caching.StackExchangeRedis.AbpCachingStackExchangeRedisModule
+2025-06-17 10:35:34.374 +05:45 [INF]   - Volo.Abp.DistributedLocking.AbpDistributedLockingModule
+2025-06-17 10:35:34.374 +05:45 [INF]   - Volo.Abp.AspNetCore.Mvc.UI.MultiTenancy.AbpAspNetCoreMvcUiMultiTenancyModule
+2025-06-17 10:35:34.374 +05:45 [INF]     - Volo.Abp.AspNetCore.Mvc.UI.Theme.Shared.AbpAspNetCoreMvcUiThemeSharedModule
+2025-06-17 10:35:34.374 +05:45 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Bootstrap.AbpAspNetCoreMvcUiBootstrapModule
+2025-06-17 10:35:34.374 +05:45 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.AbpAspNetCoreMvcUiModule
+2025-06-17 10:35:34.374 +05:45 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Packages.AbpAspNetCoreMvcUiPackagesModule
+2025-06-17 10:35:34.374 +05:45 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingAbstractionsModule
+2025-06-17 10:35:34.374 +05:45 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Widgets.AbpAspNetCoreMvcUiWidgetsModule
+2025-06-17 10:35:34.374 +05:45 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingModule
+2025-06-17 10:35:34.374 +05:45 [INF]           - Volo.Abp.AspNetCore.Bundling.AbpAspNetCoreBundlingModule
+2025-06-17 10:35:34.374 +05:45 [INF]     - Volo.Abp.AspNetCore.MultiTenancy.AbpAspNetCoreMultiTenancyModule
+2025-06-17 10:35:34.374 +05:45 [INF]   - Volo.Abp.AspNetCore.Authentication.JwtBearer.AbpAspNetCoreAuthenticationJwtBearerModule
+2025-06-17 10:35:34.374 +05:45 [INF]   - RateLimit.RateLimitApplicationModule
+2025-06-17 10:35:34.374 +05:45 [INF]     - RateLimit.RateLimitDomainModule
+2025-06-17 10:35:34.374 +05:45 [INF]       - Volo.Abp.AuditLogging.AbpAuditLoggingDomainModule
+2025-06-17 10:35:34.374 +05:45 [INF]       - Volo.Abp.BackgroundJobs.AbpBackgroundJobsDomainModule
+2025-06-17 10:35:34.374 +05:45 [INF]         - Volo.Abp.BackgroundJobs.AbpBackgroundJobsModule
+2025-06-17 10:35:34.374 +05:45 [INF]           - Volo.Abp.BackgroundJobs.AbpBackgroundJobsAbstractionsModule
+2025-06-17 10:35:34.374 +05:45 [INF]         - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2025-06-17 10:35:34.374 +05:45 [INF]       - Volo.Abp.FeatureManagement.AbpFeatureManagementDomainModule
+2025-06-17 10:35:34.374 +05:45 [INF]       - Volo.Abp.Identity.AbpIdentityDomainModule
+2025-06-17 10:35:34.374 +05:45 [INF]         - Volo.Abp.Users.AbpUsersDomainModule
+2025-06-17 10:35:34.374 +05:45 [INF]       - Volo.Abp.OpenIddict.AbpOpenIddictDomainModule
+2025-06-17 10:35:34.374 +05:45 [INF]       - Volo.Abp.PermissionManagement.OpenIddict.AbpPermissionManagementDomainOpenIddictModule
+2025-06-17 10:35:34.374 +05:45 [INF]         - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+2025-06-17 10:35:34.374 +05:45 [INF]       - Volo.Abp.PermissionManagement.Identity.AbpPermissionManagementDomainIdentityModule
+2025-06-17 10:35:34.374 +05:45 [INF]       - Volo.Abp.SettingManagement.AbpSettingManagementDomainModule
+2025-06-17 10:35:34.374 +05:45 [INF]       - Volo.Abp.TenantManagement.AbpTenantManagementDomainModule
+2025-06-17 10:35:34.374 +05:45 [INF]       - Volo.Abp.Emailing.AbpEmailingModule
+2025-06-17 10:35:34.374 +05:45 [INF]         - Volo.Abp.TextTemplating.AbpTextTemplatingModule
+2025-06-17 10:35:34.374 +05:45 [INF]           - Volo.Abp.TextTemplating.Scriban.AbpTextTemplatingScribanModule
+2025-06-17 10:35:34.374 +05:45 [INF]             - Volo.Abp.TextTemplating.AbpTextTemplatingCoreModule
+2025-06-17 10:35:34.374 +05:45 [INF]     - Volo.Abp.Account.AbpAccountApplicationModule
+2025-06-17 10:35:34.374 +05:45 [INF]       - Volo.Abp.Identity.AbpIdentityApplicationModule
+2025-06-17 10:35:34.374 +05:45 [INF]         - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationModule
+2025-06-17 10:35:34.374 +05:45 [INF]     - Volo.Abp.TenantManagement.AbpTenantManagementApplicationModule
+2025-06-17 10:35:34.374 +05:45 [INF]     - Volo.Abp.FeatureManagement.AbpFeatureManagementApplicationModule
+2025-06-17 10:35:34.374 +05:45 [INF]     - Volo.Abp.SettingManagement.AbpSettingManagementApplicationModule
+2025-06-17 10:35:34.374 +05:45 [INF]   - RateLimit.EntityFrameworkCore.RateLimitEntityFrameworkCoreModule
+2025-06-17 10:35:34.374 +05:45 [INF]     - Volo.Abp.Identity.EntityFrameworkCore.AbpIdentityEntityFrameworkCoreModule
+2025-06-17 10:35:34.374 +05:45 [INF]       - Volo.Abp.Users.EntityFrameworkCore.AbpUsersEntityFrameworkCoreModule
+2025-06-17 10:35:34.374 +05:45 [INF]         - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2025-06-17 10:35:34.374 +05:45 [INF]     - Volo.Abp.OpenIddict.EntityFrameworkCore.AbpOpenIddictEntityFrameworkCoreModule
+2025-06-17 10:35:34.374 +05:45 [INF]     - Volo.Abp.PermissionManagement.EntityFrameworkCore.AbpPermissionManagementEntityFrameworkCoreModule
+2025-06-17 10:35:34.374 +05:45 [INF]     - Volo.Abp.SettingManagement.EntityFrameworkCore.AbpSettingManagementEntityFrameworkCoreModule
+2025-06-17 10:35:34.374 +05:45 [INF]     - Volo.Abp.EntityFrameworkCore.PostgreSql.AbpEntityFrameworkCorePostgreSqlModule
+2025-06-17 10:35:34.374 +05:45 [INF]     - Volo.Abp.BackgroundJobs.EntityFrameworkCore.AbpBackgroundJobsEntityFrameworkCoreModule
+2025-06-17 10:35:34.374 +05:45 [INF]     - Volo.Abp.AuditLogging.EntityFrameworkCore.AbpAuditLoggingEntityFrameworkCoreModule
+2025-06-17 10:35:34.374 +05:45 [INF]     - Volo.Abp.TenantManagement.EntityFrameworkCore.AbpTenantManagementEntityFrameworkCoreModule
+2025-06-17 10:35:34.374 +05:45 [INF]     - Volo.Abp.FeatureManagement.EntityFrameworkCore.AbpFeatureManagementEntityFrameworkCoreModule
+2025-06-17 10:35:34.374 +05:45 [INF]   - Volo.Abp.AspNetCore.Serilog.AbpAspNetCoreSerilogModule
+2025-06-17 10:35:34.374 +05:45 [INF]   - Volo.Abp.Swashbuckle.AbpSwashbuckleModule
+2025-06-17 10:35:34.375 +05:45 [INF]   - Volo.Abp.EventBus.RabbitMq.AbpEventBusRabbitMqModule
+2025-06-17 10:35:34.375 +05:45 [INF]     - Volo.Abp.RabbitMQ.AbpRabbitMqModule
+2025-06-17 10:35:34.375 +05:45 [INF]   - RateLimit.RabbitMQ.RabbitMQModule
+2025-06-17 10:35:35.328 +05:45 [DBG] Started background worker: Volo.Abp.BackgroundJobs.BackgroundJobWorker
+2025-06-17 10:35:35.348 +05:45 [DBG] Started background worker: Volo.Abp.OpenIddict.Tokens.TokenCleanupBackgroundWorker
+2025-06-17 10:35:36.567 +05:45 [INF] 👂 Consumer is now listening to item-queue...
+2025-06-17 10:35:36.567 +05:45 [DBG] Started background worker: RateLimit.Services.ItemConsumer
+2025-06-17 10:35:37.903 +05:45 [INF] User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-06-17 10:35:38.101 +05:45 [INF] Initialized all ABP modules.
+2025-06-17 10:35:38.444 +05:45 [INF] Now listening on: https://localhost:44377
+2025-06-17 10:35:38.551 +05:45 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-17 10:35:38.552 +05:45 [INF] Hosting environment: Development
+2025-06-17 10:35:38.552 +05:45 [INF] Content root path: C:\AMNIL\Mentorship\Rate-Limit\src\RateLimit.HttpApi.Host
+2025-06-17 10:35:41.480 +05:45 [INF] Request starting HTTP/2 GET https://localhost:44377/ - null null
+2025-06-17 10:35:44.911 +05:45 [INF] Executing endpoint 'RateLimit.Controllers.HomeController.Index (RateLimit.HttpApi.Host)'
+2025-06-17 10:35:44.953 +05:45 [INF] Route matched with {action = "Index", controller = "Home", area = "", page = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Index() on controller RateLimit.Controllers.HomeController (RateLimit.HttpApi.Host).
+2025-06-17 10:35:45.012 +05:45 [INF] Executing RedirectResult, redirecting to /swagger.
+2025-06-17 10:35:45.021 +05:45 [INF] Executed action RateLimit.Controllers.HomeController.Index (RateLimit.HttpApi.Host) in 59.5041ms
+2025-06-17 10:35:45.022 +05:45 [INF] Executed endpoint 'RateLimit.Controllers.HomeController.Index (RateLimit.HttpApi.Host)'
+2025-06-17 10:35:45.046 +05:45 [INF] Request finished HTTP/2 GET https://localhost:44377/ - 302 0 null 3581.7136ms
+2025-06-17 10:35:45.055 +05:45 [INF] Request starting HTTP/2 GET https://localhost:44377/swagger - null null
+2025-06-17 10:35:45.067 +05:45 [INF] Request finished HTTP/2 GET https://localhost:44377/swagger - 301 0 null 12.3185ms
+2025-06-17 10:35:45.072 +05:45 [INF] Request starting HTTP/2 GET https://localhost:44377/swagger/index.html - null null
+2025-06-17 10:35:45.157 +05:45 [INF] Request finished HTTP/2 GET https://localhost:44377/swagger/index.html - 200 null text/html;charset=utf-8 85.1136ms
+2025-06-17 10:35:45.165 +05:45 [INF] Request starting HTTP/2 GET https://localhost:44377/swagger/swagger-ui.css - null null
+2025-06-17 10:35:45.165 +05:45 [INF] Request starting HTTP/2 GET https://localhost:44377/swagger/index.css - null null
+2025-06-17 10:35:45.165 +05:45 [INF] Request starting HTTP/2 GET https://localhost:44377/swagger/ui/abp.js - null null
+2025-06-17 10:35:45.165 +05:45 [INF] Request starting HTTP/2 GET https://localhost:44377/swagger/swagger-ui-bundle.js - null null
+2025-06-17 10:35:45.166 +05:45 [INF] Request starting HTTP/2 GET https://localhost:44377/swagger/ui/abp.swagger.js - null null
+2025-06-17 10:35:45.167 +05:45 [INF] Request starting HTTP/2 GET https://localhost:44377/swagger/index.js - null null
+2025-06-17 10:35:45.167 +05:45 [INF] Request starting HTTP/2 GET https://localhost:44377/swagger/swagger-ui-standalone-preset.js - null null
+2025-06-17 10:35:45.168 +05:45 [INF] Request starting HTTP/2 GET https://localhost:44377/_framework/aspnetcore-browser-refresh.js - null null
+2025-06-17 10:35:45.182 +05:45 [INF] Request finished HTTP/2 GET https://localhost:44377/swagger/index.js - 200 null application/javascript;charset=utf-8 15.6843ms
+2025-06-17 10:35:45.188 +05:45 [INF] Sending file. Request path: '/index.css'. Physical path: 'N/A'
+2025-06-17 10:35:45.188 +05:45 [INF] Sending file. Request path: '/swagger/ui/abp.js'. Physical path: 'N/A'
+2025-06-17 10:35:45.189 +05:45 [INF] Request finished HTTP/2 GET https://localhost:44377/swagger/ui/abp.js - 200 3122 application/javascript 23.5292ms
+2025-06-17 10:35:45.189 +05:45 [INF] Request finished HTTP/2 GET https://localhost:44377/swagger/index.css - 200 202 text/css 23.6486ms
+2025-06-17 10:35:45.194 +05:45 [INF] Request finished HTTP/2 GET https://localhost:44377/_framework/aspnetcore-browser-refresh.js - 200 16529 application/javascript; charset=utf-8 26.4055ms
+2025-06-17 10:35:45.202 +05:45 [INF] Sending file. Request path: '/swagger/ui/abp.swagger.js'. Physical path: 'N/A'
+2025-06-17 10:35:45.204 +05:45 [INF] Request finished HTTP/2 GET https://localhost:44377/swagger/ui/abp.swagger.js - 200 4668 application/javascript 37.9106ms
+2025-06-17 10:35:45.208 +05:45 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-06-17 10:35:45.213 +05:45 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-06-17 10:35:45.215 +05:45 [INF] Request finished HTTP/2 GET https://localhost:44377/swagger/swagger-ui.css - 200 152034 text/css 49.5588ms
+2025-06-17 10:35:45.215 +05:45 [INF] Request finished HTTP/2 GET https://localhost:44377/swagger/swagger-ui-standalone-preset.js - 200 230293 text/javascript 48.6066ms
+2025-06-17 10:35:45.253 +05:45 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-06-17 10:35:45.253 +05:45 [INF] Request finished HTTP/2 GET https://localhost:44377/swagger/swagger-ui-bundle.js - 200 1452753 text/javascript 87.9703ms
+2025-06-17 10:35:45.283 +05:45 [INF] Request starting HTTP/2 GET https://localhost:44377/_vs/browserLink - null null
+2025-06-17 10:35:45.547 +05:45 [INF] Request finished HTTP/2 GET https://localhost:44377/_vs/browserLink - 200 null text/javascript; charset=UTF-8 264.0788ms
+2025-06-17 10:35:45.621 +05:45 [INF] Request starting HTTP/2 GET https://localhost:44377/swagger/v1/swagger.json - null null
+2025-06-17 10:35:45.650 +05:45 [INF] Request starting HTTP/2 GET https://localhost:44377/swagger/favicon-32x32.png - null null
+2025-06-17 10:35:45.656 +05:45 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2025-06-17 10:35:45.657 +05:45 [INF] Request finished HTTP/2 GET https://localhost:44377/swagger/favicon-32x32.png - 200 628 image/png 6.5311ms
+2025-06-17 10:35:45.881 +05:45 [INF] Request finished HTTP/2 GET https://localhost:44377/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 259.3507ms
+2025-06-17 10:39:14.327 +05:45 [INF] Request starting HTTP/2 GET https://localhost:44377/abp/Swashbuckle/SetCsrfCookie - application/json null
+2025-06-17 10:39:14.381 +05:45 [INF] Executing endpoint 'Volo.Abp.Swashbuckle.AbpSwashbuckleController.SetCsrfCookie (Volo.Abp.Swashbuckle)'
+2025-06-17 10:39:14.384 +05:45 [INF] Route matched with {area = "Abp", action = "SetCsrfCookie", controller = "AbpSwashbuckle", page = ""}. Executing controller action with signature Void SetCsrfCookie() on controller Volo.Abp.Swashbuckle.AbpSwashbuckleController (Volo.Abp.Swashbuckle).
+2025-06-17 10:39:14.404 +05:45 [INF] Executed action Volo.Abp.Swashbuckle.AbpSwashbuckleController.SetCsrfCookie (Volo.Abp.Swashbuckle) in 19.7904ms
+2025-06-17 10:39:14.404 +05:45 [INF] Executed endpoint 'Volo.Abp.Swashbuckle.AbpSwashbuckleController.SetCsrfCookie (Volo.Abp.Swashbuckle)'
+2025-06-17 10:39:14.404 +05:45 [INF] Request finished HTTP/2 GET https://localhost:44377/abp/Swashbuckle/SetCsrfCookie - 204 null null 77.4667ms
+2025-06-17 10:39:14.496 +05:45 [INF] Request starting HTTP/2 POST https://localhost:44377/api/app/item - application/json 38
+2025-06-17 10:39:14.502 +05:45 [INF] CORS policy execution failed.
+2025-06-17 10:39:14.503 +05:45 [INF] Request origin https://localhost:44377 does not have permission to access the resource.
+2025-06-17 10:39:14.505 +05:45 [INF] Executing endpoint 'RateLimit.AppServices.ItemAppService.CreateAsync (RateLimit.Application)'
+2025-06-17 10:39:14.519 +05:45 [INF] Route matched with {action = "Create", controller = "Item", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[RateLimit.ResponseModels.ResponseModel`1[RateLimit.Interfaces.Dtos.CreateItemResponseDto]] CreateAsync(RateLimit.Interfaces.Dtos.CreateUpdateItemDto) on controller RateLimit.AppServices.ItemAppService (RateLimit.Application).
+2025-06-17 10:39:15.271 +05:45 [DBG] ItemAppService - CreateAsync with input: {"Name":"Mobile","Price":100,"$type":"CreateUpdateItemDto"}
+2025-06-17 10:39:16.233 +05:45 [DBG] ItemAppService - CreateAsync response: {"Success":true,"Message":"Item has been created.","Data":{"Id":"3a1a8e69-be52-8d69-24e6-13138d7cd482","$type":"CreateItemResponseDto"},"Errors":null,"$type":"ResponseModel`1"}
+2025-06-17 10:39:16.233 +05:45 [INF] ItemAppService - CreateAsync completed successfully.
+2025-06-17 10:39:16.603 +05:45 [INF] Executing ObjectResult, writing value of type 'RateLimit.ResponseModels.ResponseModel`1[[RateLimit.Interfaces.Dtos.CreateItemResponseDto, RateLimit.Application.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-17 10:39:16.612 +05:45 [INF] Executed action RateLimit.AppServices.ItemAppService.CreateAsync (RateLimit.Application) in 2093.3664ms
+2025-06-17 10:39:16.613 +05:45 [INF] Executed endpoint 'RateLimit.AppServices.ItemAppService.CreateAsync (RateLimit.Application)'
+2025-06-17 10:39:16.971 +05:45 [INF] Request finished HTTP/2 POST https://localhost:44377/api/app/item - 200 null application/json; charset=utf-8 2475.6039ms
+2025-06-17 11:35:35.405 +05:45 [INF] Lock is acquired for TokenCleanupBackgroundWorker
+2025-06-17 11:35:36.540 +05:45 [INF] Start cleanup.
+2025-06-17 11:35:36.540 +05:45 [INF] Start cleanup tokens.
+2025-06-17 11:35:36.950 +05:45 [INF] Start cleanup authorizations.
+2025-06-17 11:35:37.143 +05:45 [INF] Lock is released for TokenCleanupBackgroundWorker
+2025-06-17 12:04:45.090 +05:45 [INF] Request starting HTTP/2 POST https://localhost:44377/api/app/item - application/json 38
+2025-06-17 12:04:45.098 +05:45 [INF] CORS policy execution failed.
+2025-06-17 12:04:45.098 +05:45 [INF] Request origin https://localhost:44377 does not have permission to access the resource.
+2025-06-17 12:04:45.104 +05:45 [INF] Executing endpoint 'RateLimit.AppServices.ItemAppService.CreateAsync (RateLimit.Application)'
+2025-06-17 12:04:45.106 +05:45 [INF] Route matched with {action = "Create", controller = "Item", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[RateLimit.ResponseModels.ResponseModel`1[RateLimit.Interfaces.Dtos.CreateItemResponseDto]] CreateAsync(RateLimit.Interfaces.Dtos.CreateUpdateItemDto) on controller RateLimit.AppServices.ItemAppService (RateLimit.Application).
+2025-06-17 12:04:45.116 +05:45 [DBG] ItemAppService - CreateAsync with input: {"Name":"Mobile","Price":100,"$type":"CreateUpdateItemDto"}
+2025-06-17 12:04:45.123 +05:45 [DBG] ItemAppService - CreateAsync response: {"Success":true,"Message":"Item has been created.","Data":{"Id":"3a1a8eb8-045f-26fa-7b19-a2bfac6c09cd","$type":"CreateItemResponseDto"},"Errors":null,"$type":"ResponseModel`1"}
+2025-06-17 12:04:45.123 +05:45 [INF] ItemAppService - CreateAsync completed successfully.
+2025-06-17 12:04:45.135 +05:45 [INF] Executing ObjectResult, writing value of type 'RateLimit.ResponseModels.ResponseModel`1[[RateLimit.Interfaces.Dtos.CreateItemResponseDto, RateLimit.Application.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-17 12:04:45.136 +05:45 [INF] Executed action RateLimit.AppServices.ItemAppService.CreateAsync (RateLimit.Application) in 29.5838ms
+2025-06-17 12:04:45.136 +05:45 [INF] Executed endpoint 'RateLimit.AppServices.ItemAppService.CreateAsync (RateLimit.Application)'
+2025-06-17 12:04:45.234 +05:45 [INF] Request finished HTTP/2 POST https://localhost:44377/api/app/item - 200 null application/json; charset=utf-8 144.6283ms
+2025-06-17 12:11:09.634 +05:45 [INF] Request starting HTTP/2 GET https://localhost:44377/api/app/item/3a1a8eb8-045f-26fa-7b19-a2bfac6c09cd - null null
+2025-06-17 12:11:09.647 +05:45 [INF] Executing endpoint 'RateLimit.AppServices.ItemAppService.GetAsync (RateLimit.Application)'
+2025-06-17 12:11:09.688 +05:45 [INF] Route matched with {action = "Get", controller = "Item", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[RateLimit.ResponseModels.ResponseModel`1[RateLimit.Interfaces.Dtos.ItemDto]] GetAsync(System.Guid) on controller RateLimit.AppServices.ItemAppService (RateLimit.Application).
+2025-06-17 12:11:09.702 +05:45 [INF] ItemAppService - GetAsync called with Id: "3a1a8eb8-045f-26fa-7b19-a2bfac6c09cd"
+2025-06-17 12:11:09.749 +05:45 [INF] Cache miss for key: ITEM_CACHE_KEY
+2025-06-17 12:11:09.840 +05:45 [DBG] ItemAppService - GetAsync response: {"Success":true,"Message":"Item has been created.","Data":{"Id":"3a1a8eb8-045f-26fa-7b19-a2bfac6c09cd","Name":"Mobile","Price":100,"$type":"ItemDto"},"Errors":null,"$type":"ResponseModel`1"}
+2025-06-17 12:11:09.840 +05:45 [INF] ItemAppService - GetAsync completed successfully.
+2025-06-17 12:11:09.843 +05:45 [INF] Executing ObjectResult, writing value of type 'RateLimit.ResponseModels.ResponseModel`1[[RateLimit.Interfaces.Dtos.ItemDto, RateLimit.Application.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-17 12:11:09.846 +05:45 [INF] Executed action RateLimit.AppServices.ItemAppService.GetAsync (RateLimit.Application) in 157.6262ms
+2025-06-17 12:11:09.846 +05:45 [INF] Executed endpoint 'RateLimit.AppServices.ItemAppService.GetAsync (RateLimit.Application)'
+2025-06-17 12:11:09.847 +05:45 [INF] Request finished HTTP/2 GET https://localhost:44377/api/app/item/3a1a8eb8-045f-26fa-7b19-a2bfac6c09cd - 200 null application/json; charset=utf-8 213.756ms
+2025-06-17 12:27:54.358 +05:45 [INF] Starting RateLimit.HttpApi.Host.
+2025-06-17 12:28:01.406 +05:45 [INF] Loaded ABP modules:
+2025-06-17 12:28:01.408 +05:45 [INF] - RateLimit.RateLimitHttpApiHostModule
+2025-06-17 12:28:01.408 +05:45 [INF]   - RateLimit.RateLimitHttpApiModule
+2025-06-17 12:28:01.408 +05:45 [INF]     - RateLimit.RateLimitApplicationContractsModule
+2025-06-17 12:28:01.408 +05:45 [INF]       - RateLimit.RateLimitDomainSharedModule
+2025-06-17 12:28:01.408 +05:45 [INF]         - Volo.Abp.AuditLogging.AbpAuditLoggingDomainSharedModule
+2025-06-17 12:28:01.408 +05:45 [INF]           - Volo.Abp.Validation.AbpValidationModule
+2025-06-17 12:28:01.408 +05:45 [INF]             - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2025-06-17 12:28:01.408 +05:45 [INF]             - Volo.Abp.Localization.AbpLocalizationModule
+2025-06-17 12:28:01.408 +05:45 [INF]               - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2025-06-17 12:28:01.408 +05:45 [INF]               - Volo.Abp.Settings.AbpSettingsModule
+2025-06-17 12:28:01.408 +05:45 [INF]                 - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2025-06-17 12:28:01.408 +05:45 [INF]                 - Volo.Abp.Security.AbpSecurityModule
+2025-06-17 12:28:01.408 +05:45 [INF]                 - Volo.Abp.Data.AbpDataModule
+2025-06-17 12:28:01.408 +05:45 [INF]                   - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2025-06-17 12:28:01.408 +05:45 [INF]                   - Volo.Abp.Uow.AbpUnitOfWorkModule
+2025-06-17 12:28:01.408 +05:45 [INF]                   - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+2025-06-17 12:28:01.408 +05:45 [INF]               - Volo.Abp.Threading.AbpThreadingModule
+2025-06-17 12:28:01.408 +05:45 [INF]         - Volo.Abp.BackgroundJobs.AbpBackgroundJobsDomainSharedModule
+2025-06-17 12:28:01.408 +05:45 [INF]         - Volo.Abp.FeatureManagement.AbpFeatureManagementDomainSharedModule
+2025-06-17 12:28:01.408 +05:45 [INF]           - Volo.Abp.Json.SystemTextJson.AbpJsonSystemTextJsonModule
+2025-06-17 12:28:01.408 +05:45 [INF]             - Volo.Abp.Json.AbpJsonAbstractionsModule
+2025-06-17 12:28:01.408 +05:45 [INF]             - Volo.Abp.Timing.AbpTimingModule
+2025-06-17 12:28:01.408 +05:45 [INF]         - Volo.Abp.Identity.AbpIdentityDomainSharedModule
+2025-06-17 12:28:01.408 +05:45 [INF]           - Volo.Abp.Users.AbpUsersDomainSharedModule
+2025-06-17 12:28:01.408 +05:45 [INF]           - Volo.Abp.Features.AbpFeaturesModule
+2025-06-17 12:28:01.408 +05:45 [INF]             - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2025-06-17 12:28:01.408 +05:45 [INF]               - Volo.Abp.MultiTenancy.AbpMultiTenancyAbstractionsModule
+2025-06-17 12:28:01.408 +05:45 [INF]             - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+2025-06-17 12:28:01.408 +05:45 [INF]         - Volo.Abp.OpenIddict.AbpOpenIddictDomainSharedModule
+2025-06-17 12:28:01.408 +05:45 [INF]         - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2025-06-17 12:28:01.408 +05:45 [INF]         - Volo.Abp.SettingManagement.AbpSettingManagementDomainSharedModule
+2025-06-17 12:28:01.408 +05:45 [INF]         - Volo.Abp.TenantManagement.AbpTenantManagementDomainSharedModule
+2025-06-17 12:28:01.408 +05:45 [INF]       - Volo.Abp.Account.AbpAccountApplicationContractsModule
+2025-06-17 12:28:01.408 +05:45 [INF]         - Volo.Abp.Identity.AbpIdentityApplicationContractsModule
+2025-06-17 12:28:01.408 +05:45 [INF]           - Volo.Abp.Users.AbpUsersAbstractionModule
+2025-06-17 12:28:01.408 +05:45 [INF]             - Volo.Abp.EventBus.AbpEventBusModule
+2025-06-17 12:28:01.408 +05:45 [INF]               - Volo.Abp.Json.AbpJsonModule
+2025-06-17 12:28:01.408 +05:45 [INF]               - Volo.Abp.Guids.AbpGuidsModule
+2025-06-17 12:28:01.408 +05:45 [INF]               - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2025-06-17 12:28:01.408 +05:45 [INF]               - Volo.Abp.DistributedLocking.AbpDistributedLockingAbstractionsModule
+2025-06-17 12:28:01.408 +05:45 [INF]           - Volo.Abp.Authorization.AbpAuthorizationModule
+2025-06-17 12:28:01.408 +05:45 [INF]           - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationContractsModule
+2025-06-17 12:28:01.408 +05:45 [INF]             - Volo.Abp.Application.AbpDddApplicationContractsModule
+2025-06-17 12:28:01.408 +05:45 [INF]               - Volo.Abp.Auditing.AbpAuditingContractsModule
+2025-06-17 12:28:01.408 +05:45 [INF]       - Volo.Abp.FeatureManagement.AbpFeatureManagementApplicationContractsModule
+2025-06-17 12:28:01.408 +05:45 [INF]       - Volo.Abp.SettingManagement.AbpSettingManagementApplicationContractsModule
+2025-06-17 12:28:01.408 +05:45 [INF]       - Volo.Abp.TenantManagement.AbpTenantManagementApplicationContractsModule
+2025-06-17 12:28:01.408 +05:45 [INF]     - Volo.Abp.Account.AbpAccountHttpApiModule
+2025-06-17 12:28:01.408 +05:45 [INF]       - Volo.Abp.Identity.AbpIdentityHttpApiModule
+2025-06-17 12:28:01.408 +05:45 [INF]         - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2025-06-17 12:28:01.408 +05:45 [INF]           - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2025-06-17 12:28:01.408 +05:45 [INF]             - Volo.Abp.Auditing.AbpAuditingModule
+2025-06-17 12:28:01.408 +05:45 [INF]             - Volo.Abp.Http.AbpHttpModule
+2025-06-17 12:28:01.408 +05:45 [INF]               - Volo.Abp.Http.AbpHttpAbstractionsModule
+2025-06-17 12:28:01.408 +05:45 [INF]               - Volo.Abp.Minify.AbpMinifyModule
+2025-06-17 12:28:01.408 +05:45 [INF]             - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2025-06-17 12:28:01.408 +05:45 [INF]             - Volo.Abp.AspNetCore.AbpAspNetCoreAbstractionsModule
+2025-06-17 12:28:01.408 +05:45 [INF]           - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2025-06-17 12:28:01.408 +05:45 [INF]           - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2025-06-17 12:28:01.408 +05:45 [INF]           - Volo.Abp.UI.Navigation.AbpUiNavigationModule
+2025-06-17 12:28:01.408 +05:45 [INF]             - Volo.Abp.UI.AbpUiModule
+2025-06-17 12:28:01.408 +05:45 [INF]           - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2025-06-17 12:28:01.408 +05:45 [INF]           - Volo.Abp.Application.AbpDddApplicationModule
+2025-06-17 12:28:01.408 +05:45 [INF]             - Volo.Abp.Domain.AbpDddDomainModule
+2025-06-17 12:28:01.408 +05:45 [INF]               - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2025-06-17 12:28:01.408 +05:45 [INF]               - Volo.Abp.Specifications.AbpSpecificationsModule
+2025-06-17 12:28:01.408 +05:45 [INF]               - Volo.Abp.Caching.AbpCachingModule
+2025-06-17 12:28:01.408 +05:45 [INF]                 - Volo.Abp.Serialization.AbpSerializationModule
+2025-06-17 12:28:01.408 +05:45 [INF]               - Volo.Abp.Domain.AbpDddDomainSharedModule
+2025-06-17 12:28:01.408 +05:45 [INF]     - Volo.Abp.PermissionManagement.HttpApi.AbpPermissionManagementHttpApiModule
+2025-06-17 12:28:01.408 +05:45 [INF]     - Volo.Abp.TenantManagement.AbpTenantManagementHttpApiModule
+2025-06-17 12:28:01.408 +05:45 [INF]       - Volo.Abp.FeatureManagement.AbpFeatureManagementHttpApiModule
+2025-06-17 12:28:01.408 +05:45 [INF]     - Volo.Abp.SettingManagement.AbpSettingManagementHttpApiModule
+2025-06-17 12:28:01.408 +05:45 [INF]   - Volo.Abp.Autofac.AbpAutofacModule
+2025-06-17 12:28:01.408 +05:45 [INF]     - Volo.Abp.Castle.AbpCastleCoreModule
+2025-06-17 12:28:01.408 +05:45 [INF]   - Volo.Abp.Caching.StackExchangeRedis.AbpCachingStackExchangeRedisModule
+2025-06-17 12:28:01.408 +05:45 [INF]   - Volo.Abp.DistributedLocking.AbpDistributedLockingModule
+2025-06-17 12:28:01.408 +05:45 [INF]   - Volo.Abp.AspNetCore.Mvc.UI.MultiTenancy.AbpAspNetCoreMvcUiMultiTenancyModule
+2025-06-17 12:28:01.408 +05:45 [INF]     - Volo.Abp.AspNetCore.Mvc.UI.Theme.Shared.AbpAspNetCoreMvcUiThemeSharedModule
+2025-06-17 12:28:01.408 +05:45 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Bootstrap.AbpAspNetCoreMvcUiBootstrapModule
+2025-06-17 12:28:01.408 +05:45 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.AbpAspNetCoreMvcUiModule
+2025-06-17 12:28:01.408 +05:45 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Packages.AbpAspNetCoreMvcUiPackagesModule
+2025-06-17 12:28:01.408 +05:45 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingAbstractionsModule
+2025-06-17 12:28:01.408 +05:45 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Widgets.AbpAspNetCoreMvcUiWidgetsModule
+2025-06-17 12:28:01.408 +05:45 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingModule
+2025-06-17 12:28:01.408 +05:45 [INF]           - Volo.Abp.AspNetCore.Bundling.AbpAspNetCoreBundlingModule
+2025-06-17 12:28:01.408 +05:45 [INF]     - Volo.Abp.AspNetCore.MultiTenancy.AbpAspNetCoreMultiTenancyModule
+2025-06-17 12:28:01.408 +05:45 [INF]   - Volo.Abp.AspNetCore.Authentication.JwtBearer.AbpAspNetCoreAuthenticationJwtBearerModule
+2025-06-17 12:28:01.408 +05:45 [INF]   - RateLimit.RateLimitApplicationModule
+2025-06-17 12:28:01.408 +05:45 [INF]     - RateLimit.RateLimitDomainModule
+2025-06-17 12:28:01.408 +05:45 [INF]       - Volo.Abp.AuditLogging.AbpAuditLoggingDomainModule
+2025-06-17 12:28:01.408 +05:45 [INF]       - Volo.Abp.BackgroundJobs.AbpBackgroundJobsDomainModule
+2025-06-17 12:28:01.408 +05:45 [INF]         - Volo.Abp.BackgroundJobs.AbpBackgroundJobsModule
+2025-06-17 12:28:01.408 +05:45 [INF]           - Volo.Abp.BackgroundJobs.AbpBackgroundJobsAbstractionsModule
+2025-06-17 12:28:01.408 +05:45 [INF]         - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2025-06-17 12:28:01.408 +05:45 [INF]       - Volo.Abp.FeatureManagement.AbpFeatureManagementDomainModule
+2025-06-17 12:28:01.408 +05:45 [INF]       - Volo.Abp.Identity.AbpIdentityDomainModule
+2025-06-17 12:28:01.408 +05:45 [INF]         - Volo.Abp.Users.AbpUsersDomainModule
+2025-06-17 12:28:01.408 +05:45 [INF]       - Volo.Abp.OpenIddict.AbpOpenIddictDomainModule
+2025-06-17 12:28:01.408 +05:45 [INF]       - Volo.Abp.PermissionManagement.OpenIddict.AbpPermissionManagementDomainOpenIddictModule
+2025-06-17 12:28:01.408 +05:45 [INF]         - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+2025-06-17 12:28:01.408 +05:45 [INF]       - Volo.Abp.PermissionManagement.Identity.AbpPermissionManagementDomainIdentityModule
+2025-06-17 12:28:01.408 +05:45 [INF]       - Volo.Abp.SettingManagement.AbpSettingManagementDomainModule
+2025-06-17 12:28:01.408 +05:45 [INF]       - Volo.Abp.TenantManagement.AbpTenantManagementDomainModule
+2025-06-17 12:28:01.408 +05:45 [INF]       - Volo.Abp.Emailing.AbpEmailingModule
+2025-06-17 12:28:01.408 +05:45 [INF]         - Volo.Abp.TextTemplating.AbpTextTemplatingModule
+2025-06-17 12:28:01.408 +05:45 [INF]           - Volo.Abp.TextTemplating.Scriban.AbpTextTemplatingScribanModule
+2025-06-17 12:28:01.408 +05:45 [INF]             - Volo.Abp.TextTemplating.AbpTextTemplatingCoreModule
+2025-06-17 12:28:01.408 +05:45 [INF]     - Volo.Abp.Account.AbpAccountApplicationModule
+2025-06-17 12:28:01.408 +05:45 [INF]       - Volo.Abp.Identity.AbpIdentityApplicationModule
+2025-06-17 12:28:01.408 +05:45 [INF]         - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationModule
+2025-06-17 12:28:01.408 +05:45 [INF]     - Volo.Abp.TenantManagement.AbpTenantManagementApplicationModule
+2025-06-17 12:28:01.408 +05:45 [INF]     - Volo.Abp.FeatureManagement.AbpFeatureManagementApplicationModule
+2025-06-17 12:28:01.408 +05:45 [INF]     - Volo.Abp.SettingManagement.AbpSettingManagementApplicationModule
+2025-06-17 12:28:01.408 +05:45 [INF]   - RateLimit.EntityFrameworkCore.RateLimitEntityFrameworkCoreModule
+2025-06-17 12:28:01.408 +05:45 [INF]     - Volo.Abp.Identity.EntityFrameworkCore.AbpIdentityEntityFrameworkCoreModule
+2025-06-17 12:28:01.408 +05:45 [INF]       - Volo.Abp.Users.EntityFrameworkCore.AbpUsersEntityFrameworkCoreModule
+2025-06-17 12:28:01.408 +05:45 [INF]         - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2025-06-17 12:28:01.408 +05:45 [INF]     - Volo.Abp.OpenIddict.EntityFrameworkCore.AbpOpenIddictEntityFrameworkCoreModule
+2025-06-17 12:28:01.408 +05:45 [INF]     - Volo.Abp.PermissionManagement.EntityFrameworkCore.AbpPermissionManagementEntityFrameworkCoreModule
+2025-06-17 12:28:01.408 +05:45 [INF]     - Volo.Abp.SettingManagement.EntityFrameworkCore.AbpSettingManagementEntityFrameworkCoreModule
+2025-06-17 12:28:01.408 +05:45 [INF]     - Volo.Abp.EntityFrameworkCore.PostgreSql.AbpEntityFrameworkCorePostgreSqlModule
+2025-06-17 12:28:01.408 +05:45 [INF]     - Volo.Abp.BackgroundJobs.EntityFrameworkCore.AbpBackgroundJobsEntityFrameworkCoreModule
+2025-06-17 12:28:01.408 +05:45 [INF]     - Volo.Abp.AuditLogging.EntityFrameworkCore.AbpAuditLoggingEntityFrameworkCoreModule
+2025-06-17 12:28:01.408 +05:45 [INF]     - Volo.Abp.TenantManagement.EntityFrameworkCore.AbpTenantManagementEntityFrameworkCoreModule
+2025-06-17 12:28:01.408 +05:45 [INF]     - Volo.Abp.FeatureManagement.EntityFrameworkCore.AbpFeatureManagementEntityFrameworkCoreModule
+2025-06-17 12:28:01.408 +05:45 [INF]   - Volo.Abp.AspNetCore.Serilog.AbpAspNetCoreSerilogModule
+2025-06-17 12:28:01.408 +05:45 [INF]   - Volo.Abp.Swashbuckle.AbpSwashbuckleModule
+2025-06-17 12:28:01.408 +05:45 [INF]   - Volo.Abp.EventBus.RabbitMq.AbpEventBusRabbitMqModule
+2025-06-17 12:28:01.408 +05:45 [INF]     - Volo.Abp.RabbitMQ.AbpRabbitMqModule
+2025-06-17 12:28:01.408 +05:45 [INF]   - RateLimit.RabbitMQ.RabbitMQModule
+2025-06-17 12:28:02.000 +05:45 [DBG] Started background worker: Volo.Abp.BackgroundJobs.BackgroundJobWorker
+2025-06-17 12:28:02.022 +05:45 [DBG] Started background worker: Volo.Abp.OpenIddict.Tokens.TokenCleanupBackgroundWorker
+2025-06-17 12:28:02.949 +05:45 [INF] 👂 Consumer is now listening to item-queue...
+2025-06-17 12:28:02.954 +05:45 [DBG] Started background worker: RateLimit.Services.ItemConsumer
+2025-06-17 12:28:04.610 +05:45 [INF] User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-06-17 12:28:04.749 +05:45 [INF] Initialized all ABP modules.
+2025-06-17 12:28:05.047 +05:45 [INF] Now listening on: https://localhost:44377
+2025-06-17 12:28:05.136 +05:45 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-17 12:28:05.136 +05:45 [INF] Hosting environment: Development
+2025-06-17 12:28:05.136 +05:45 [INF] Content root path: C:\AMNIL\Mentorship\Rate-Limit\src\RateLimit.HttpApi.Host
+2025-06-17 12:28:07.927 +05:45 [INF] Request starting HTTP/2 GET https://localhost:44377/ - null null
+2025-06-17 12:28:11.979 +05:45 [INF] Executing endpoint 'RateLimit.Controllers.HomeController.Index (RateLimit.HttpApi.Host)'
+2025-06-17 12:28:12.032 +05:45 [INF] Route matched with {action = "Index", controller = "Home", area = "", page = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Index() on controller RateLimit.Controllers.HomeController (RateLimit.HttpApi.Host).
+2025-06-17 12:28:12.067 +05:45 [INF] Executing RedirectResult, redirecting to /swagger.
+2025-06-17 12:28:12.074 +05:45 [INF] Executed action RateLimit.Controllers.HomeController.Index (RateLimit.HttpApi.Host) in 35.9422ms
+2025-06-17 12:28:12.074 +05:45 [INF] Executed endpoint 'RateLimit.Controllers.HomeController.Index (RateLimit.HttpApi.Host)'
+2025-06-17 12:28:12.091 +05:45 [INF] Request finished HTTP/2 GET https://localhost:44377/ - 302 0 null 4173.7182ms
+2025-06-17 12:28:12.102 +05:45 [INF] Request starting HTTP/2 GET https://localhost:44377/swagger/index.html - null null
+2025-06-17 12:28:12.207 +05:45 [INF] Request finished HTTP/2 GET https://localhost:44377/swagger/index.html - 200 null text/html;charset=utf-8 104.5339ms
+2025-06-17 12:28:12.369 +05:45 [INF] Request starting HTTP/2 GET https://localhost:44377/_framework/aspnetcore-browser-refresh.js - null null
+2025-06-17 12:28:12.369 +05:45 [INF] Request starting HTTP/2 GET https://localhost:44377/swagger/index.js - null null
+2025-06-17 12:28:12.378 +05:45 [INF] Request finished HTTP/2 GET https://localhost:44377/swagger/index.js - 200 null application/javascript;charset=utf-8 9.2135ms
+2025-06-17 12:28:12.386 +05:45 [INF] Request finished HTTP/2 GET https://localhost:44377/_framework/aspnetcore-browser-refresh.js - 200 16529 application/javascript; charset=utf-8 17.4418ms
+2025-06-17 12:28:12.490 +05:45 [INF] Request starting HTTP/2 GET https://localhost:44377/_vs/browserLink - null null
+2025-06-17 12:28:12.545 +05:45 [INF] Request finished HTTP/2 GET https://localhost:44377/_vs/browserLink - 200 null text/javascript; charset=UTF-8 54.971ms
+2025-06-17 12:28:13.221 +05:45 [INF] Request starting HTTP/2 GET https://localhost:44377/swagger/v1/swagger.json - null null
+2025-06-17 12:28:13.523 +05:45 [INF] Request finished HTTP/2 GET https://localhost:44377/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 301.9755ms
+2025-06-17 12:28:57.832 +05:45 [INF] Request starting HTTP/2 GET https://localhost:44377/abp/Swashbuckle/SetCsrfCookie - null null
+2025-06-17 12:28:57.841 +05:45 [INF] Executing endpoint 'Volo.Abp.Swashbuckle.AbpSwashbuckleController.SetCsrfCookie (Volo.Abp.Swashbuckle)'
+2025-06-17 12:28:57.843 +05:45 [INF] Route matched with {area = "Abp", action = "SetCsrfCookie", controller = "AbpSwashbuckle", page = ""}. Executing controller action with signature Void SetCsrfCookie() on controller Volo.Abp.Swashbuckle.AbpSwashbuckleController (Volo.Abp.Swashbuckle).
+2025-06-17 12:28:57.859 +05:45 [INF] Executed action Volo.Abp.Swashbuckle.AbpSwashbuckleController.SetCsrfCookie (Volo.Abp.Swashbuckle) in 15.0841ms
+2025-06-17 12:28:57.859 +05:45 [INF] Executed endpoint 'Volo.Abp.Swashbuckle.AbpSwashbuckleController.SetCsrfCookie (Volo.Abp.Swashbuckle)'
+2025-06-17 12:28:57.859 +05:45 [INF] Request finished HTTP/2 GET https://localhost:44377/abp/Swashbuckle/SetCsrfCookie - 204 null null 27.2932ms
+2025-06-17 12:28:58.004 +05:45 [INF] Request starting HTTP/2 GET https://localhost:44377/api/app/item - null null
+2025-06-17 12:28:58.008 +05:45 [INF] Executing endpoint 'RateLimit.AppServices.ItemAppService.GetAllAsync (RateLimit.Application)'
+2025-06-17 12:28:58.033 +05:45 [INF] Route matched with {action = "GetAll", controller = "Item", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[RateLimit.ResponseModels.ResponseModel`1[System.Collections.Generic.List`1[RateLimit.Interfaces.Dtos.ItemDto]]] GetAllAsync() on controller RateLimit.AppServices.ItemAppService (RateLimit.Application).
+2025-06-17 12:28:58.190 +05:45 [INF] ItemAppService - GetAllAsync called }
+2025-06-17 12:28:58.780 +05:45 [INF] Executing ObjectResult, writing value of type 'RateLimit.ResponseModels.ResponseModel`1[[System.Collections.Generic.List`1[[RateLimit.Interfaces.Dtos.ItemDto, RateLimit.Application.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-06-17 12:28:58.795 +05:45 [INF] Executed action RateLimit.AppServices.ItemAppService.GetAllAsync (RateLimit.Application) in 762.3692ms
+2025-06-17 12:28:58.796 +05:45 [INF] Executed endpoint 'RateLimit.AppServices.ItemAppService.GetAllAsync (RateLimit.Application)'
+2025-06-17 12:28:58.798 +05:45 [INF] Request finished HTTP/2 GET https://localhost:44377/api/app/item - 200 null application/json; charset=utf-8 794.1166ms
+2025-06-17 12:31:13.907 +05:45 [INF] Request starting HTTP/2 GET https://localhost:44377/api/app/item - null null
+2025-06-17 12:31:14.002 +05:45 [INF] Executing endpoint 'RateLimit.AppServices.ItemAppService.GetAllAsync (RateLimit.Application)'
+2025-06-17 12:31:14.003 +05:45 [INF] Route matched with {action = "GetAll", controller = "Item", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[RateLimit.ResponseModels.ResponseModel`1[System.Collections.Generic.List`1[RateLimit.Interfaces.Dtos.ItemDto]]] GetAllAsync() on controller RateLimit.AppServices.ItemAppService (RateLimit.Application).
+2025-06-17 12:31:14.005 +05:45 [INF] ItemAppService - GetAllAsync called }
+2025-06-17 12:31:14.016 +05:45 [INF] Executing ObjectResult, writing value of type 'RateLimit.ResponseModels.ResponseModel`1[[System.Collections.Generic.List`1[[RateLimit.Interfaces.Dtos.ItemDto, RateLimit.Application.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-06-17 12:31:14.017 +05:45 [INF] Executed action RateLimit.AppServices.ItemAppService.GetAllAsync (RateLimit.Application) in 14.1698ms
+2025-06-17 12:31:14.017 +05:45 [INF] Executed endpoint 'RateLimit.AppServices.ItemAppService.GetAllAsync (RateLimit.Application)'
+2025-06-17 12:31:14.018 +05:45 [INF] Request finished HTTP/2 GET https://localhost:44377/api/app/item - 200 null application/json; charset=utf-8 111.5818ms
+2025-06-17 12:31:14.119 +05:45 [INF] Request starting HTTP/2 GET https://localhost:44377/favicon.ico - null null
+2025-06-17 12:31:14.123 +05:45 [INF] Request finished HTTP/2 GET https://localhost:44377/favicon.ico - 404 0 null 4.3139ms
+2025-06-17 12:31:14.124 +05:45 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44377/favicon.ico, Response status code: 404
+2025-06-17 12:32:58.368 +05:45 [INF] Request starting HTTP/1.1 GET https://localhost:44377/api/app/item - null null
+2025-06-17 12:32:58.370 +05:45 [INF] Executing endpoint 'RateLimit.AppServices.ItemAppService.GetAllAsync (RateLimit.Application)'
+2025-06-17 12:32:58.370 +05:45 [INF] Route matched with {action = "GetAll", controller = "Item", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[RateLimit.ResponseModels.ResponseModel`1[System.Collections.Generic.List`1[RateLimit.Interfaces.Dtos.ItemDto]]] GetAllAsync() on controller RateLimit.AppServices.ItemAppService (RateLimit.Application).
+2025-06-17 12:32:58.371 +05:45 [INF] ItemAppService - GetAllAsync called }
+2025-06-17 12:32:58.377 +05:45 [INF] Executing ObjectResult, writing value of type 'RateLimit.ResponseModels.ResponseModel`1[[System.Collections.Generic.List`1[[RateLimit.Interfaces.Dtos.ItemDto, RateLimit.Application.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-06-17 12:32:58.380 +05:45 [INF] Executed action RateLimit.AppServices.ItemAppService.GetAllAsync (RateLimit.Application) in 9.9142ms
+2025-06-17 12:32:58.380 +05:45 [INF] Executed endpoint 'RateLimit.AppServices.ItemAppService.GetAllAsync (RateLimit.Application)'
+2025-06-17 12:32:58.382 +05:45 [INF] Request finished HTTP/1.1 GET https://localhost:44377/api/app/item - 200 null application/json; charset=utf-8 14.0397ms
+2025-06-17 12:32:58.401 +05:45 [INF] Request starting HTTP/1.1 GET https://localhost:44377/api/app/item - null null
+2025-06-17 12:32:58.403 +05:45 [INF] Executing endpoint 'RateLimit.AppServices.ItemAppService.GetAllAsync (RateLimit.Application)'
+2025-06-17 12:32:58.403 +05:45 [INF] Route matched with {action = "GetAll", controller = "Item", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[RateLimit.ResponseModels.ResponseModel`1[System.Collections.Generic.List`1[RateLimit.Interfaces.Dtos.ItemDto]]] GetAllAsync() on controller RateLimit.AppServices.ItemAppService (RateLimit.Application).
+2025-06-17 12:32:58.404 +05:45 [INF] ItemAppService - GetAllAsync called }
+2025-06-17 12:32:58.411 +05:45 [INF] Executing ObjectResult, writing value of type 'RateLimit.ResponseModels.ResponseModel`1[[System.Collections.Generic.List`1[[RateLimit.Interfaces.Dtos.ItemDto, RateLimit.Application.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-06-17 12:32:58.412 +05:45 [INF] Executed action RateLimit.AppServices.ItemAppService.GetAllAsync (RateLimit.Application) in 8.8777ms
+2025-06-17 12:32:58.412 +05:45 [INF] Executed endpoint 'RateLimit.AppServices.ItemAppService.GetAllAsync (RateLimit.Application)'
+2025-06-17 12:32:58.413 +05:45 [INF] Request finished HTTP/1.1 GET https://localhost:44377/api/app/item - 200 null application/json; charset=utf-8 11.7062ms
+2025-06-17 12:32:58.423 +05:45 [INF] Request starting HTTP/1.1 GET https://localhost:44377/api/app/item - null null
+2025-06-17 12:32:58.426 +05:45 [INF] Executing endpoint 'RateLimit.AppServices.ItemAppService.GetAllAsync (RateLimit.Application)'
+2025-06-17 12:32:58.427 +05:45 [INF] Route matched with {action = "GetAll", controller = "Item", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[RateLimit.ResponseModels.ResponseModel`1[System.Collections.Generic.List`1[RateLimit.Interfaces.Dtos.ItemDto]]] GetAllAsync() on controller RateLimit.AppServices.ItemAppService (RateLimit.Application).
+2025-06-17 12:32:58.429 +05:45 [INF] ItemAppService - GetAllAsync called }
+2025-06-17 12:32:58.434 +05:45 [INF] Executing ObjectResult, writing value of type 'RateLimit.ResponseModels.ResponseModel`1[[System.Collections.Generic.List`1[[RateLimit.Interfaces.Dtos.ItemDto, RateLimit.Application.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-06-17 12:32:58.435 +05:45 [INF] Executed action RateLimit.AppServices.ItemAppService.GetAllAsync (RateLimit.Application) in 7.8598ms
+2025-06-17 12:32:58.435 +05:45 [INF] Executed endpoint 'RateLimit.AppServices.ItemAppService.GetAllAsync (RateLimit.Application)'
+2025-06-17 12:32:58.436 +05:45 [INF] Request finished HTTP/1.1 GET https://localhost:44377/api/app/item - 200 null application/json; charset=utf-8 12.8839ms
+2025-06-17 12:32:58.446 +05:45 [INF] Request starting HTTP/1.1 GET https://localhost:44377/api/app/item - null null
+2025-06-17 12:32:58.447 +05:45 [INF] Executing endpoint 'RateLimit.AppServices.ItemAppService.GetAllAsync (RateLimit.Application)'
+2025-06-17 12:32:58.447 +05:45 [INF] Route matched with {action = "GetAll", controller = "Item", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[RateLimit.ResponseModels.ResponseModel`1[System.Collections.Generic.List`1[RateLimit.Interfaces.Dtos.ItemDto]]] GetAllAsync() on controller RateLimit.AppServices.ItemAppService (RateLimit.Application).
+2025-06-17 12:32:58.448 +05:45 [INF] ItemAppService - GetAllAsync called }
+2025-06-17 12:32:58.451 +05:45 [INF] Executing ObjectResult, writing value of type 'RateLimit.ResponseModels.ResponseModel`1[[System.Collections.Generic.List`1[[RateLimit.Interfaces.Dtos.ItemDto, RateLimit.Application.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-06-17 12:32:58.452 +05:45 [INF] Executed action RateLimit.AppServices.ItemAppService.GetAllAsync (RateLimit.Application) in 4.4054ms
+2025-06-17 12:32:58.452 +05:45 [INF] Executed endpoint 'RateLimit.AppServices.ItemAppService.GetAllAsync (RateLimit.Application)'
+2025-06-17 12:32:58.452 +05:45 [INF] Request finished HTTP/1.1 GET https://localhost:44377/api/app/item - 200 null application/json; charset=utf-8 6.9444ms
+2025-06-17 12:32:58.465 +05:45 [INF] Request starting HTTP/1.1 GET https://localhost:44377/api/app/item - null null
+2025-06-17 12:32:58.467 +05:45 [INF] Executing endpoint 'RateLimit.AppServices.ItemAppService.GetAllAsync (RateLimit.Application)'
+2025-06-17 12:32:58.467 +05:45 [INF] Route matched with {action = "GetAll", controller = "Item", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[RateLimit.ResponseModels.ResponseModel`1[System.Collections.Generic.List`1[RateLimit.Interfaces.Dtos.ItemDto]]] GetAllAsync() on controller RateLimit.AppServices.ItemAppService (RateLimit.Application).
+2025-06-17 12:32:58.468 +05:45 [INF] ItemAppService - GetAllAsync called }
+2025-06-17 12:32:58.472 +05:45 [INF] Executing ObjectResult, writing value of type 'RateLimit.ResponseModels.ResponseModel`1[[System.Collections.Generic.List`1[[RateLimit.Interfaces.Dtos.ItemDto, RateLimit.Application.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-06-17 12:32:58.472 +05:45 [INF] Executed action RateLimit.AppServices.ItemAppService.GetAllAsync (RateLimit.Application) in 4.915ms
+2025-06-17 12:32:58.472 +05:45 [INF] Executed endpoint 'RateLimit.AppServices.ItemAppService.GetAllAsync (RateLimit.Application)'
+2025-06-17 12:32:58.473 +05:45 [INF] Request finished HTTP/1.1 GET https://localhost:44377/api/app/item - 200 null application/json; charset=utf-8 7.7912ms
+2025-06-17 13:28:02.056 +05:45 [INF] Lock is acquired for TokenCleanupBackgroundWorker
+2025-06-17 13:28:02.888 +05:45 [INF] Start cleanup.
+2025-06-17 13:28:02.888 +05:45 [INF] Start cleanup tokens.
+2025-06-17 13:28:03.259 +05:45 [INF] Start cleanup authorizations.
+2025-06-17 13:28:03.422 +05:45 [INF] Lock is released for TokenCleanupBackgroundWorker
+2025-06-17 13:53:15.825 +05:45 [INF] Request starting HTTP/2 GET https://localhost:44377/swagger/index.html - null null
+2025-06-17 13:53:15.842 +05:45 [INF] Request finished HTTP/2 GET https://localhost:44377/swagger/index.html - 200 null text/html;charset=utf-8 16.9035ms
+2025-06-17 13:53:15.863 +05:45 [INF] Request starting HTTP/2 GET https://localhost:44377/swagger/swagger-ui.css - null null
+2025-06-17 13:53:15.869 +05:45 [INF] Request starting HTTP/2 GET https://localhost:44377/swagger/index.css - null null
+2025-06-17 13:53:15.871 +05:45 [INF] Request starting HTTP/2 GET https://localhost:44377/swagger/ui/abp.js - null null
+2025-06-17 13:53:15.930 +05:45 [INF] Request starting HTTP/2 GET https://localhost:44377/swagger/swagger-ui-bundle.js - null null
+2025-06-17 13:53:15.940 +05:45 [INF] Request starting HTTP/2 GET https://localhost:44377/swagger/ui/abp.swagger.js - null null
+2025-06-17 13:53:15.985 +05:45 [INF] Request starting HTTP/2 GET https://localhost:44377/swagger/swagger-ui-standalone-preset.js - null null
+2025-06-17 13:53:15.997 +05:45 [INF] Request starting HTTP/2 GET https://localhost:44377/swagger/index.js - null null
+2025-06-17 13:53:16.009 +05:45 [INF] Request starting HTTP/2 GET https://localhost:44377/_framework/aspnetcore-browser-refresh.js - null null
+2025-06-17 13:53:16.012 +05:45 [INF] Request finished HTTP/2 GET https://localhost:44377/swagger/index.js - 200 null application/javascript;charset=utf-8 15.1924ms
+2025-06-17 13:53:16.012 +05:45 [INF] Request finished HTTP/2 GET https://localhost:44377/_framework/aspnetcore-browser-refresh.js - 200 16529 application/javascript; charset=utf-8 3.0825ms
+2025-06-17 13:53:16.016 +05:45 [INF] Sending file. Request path: '/index.css'. Physical path: 'N/A'
+2025-06-17 13:53:16.017 +05:45 [INF] Sending file. Request path: '/swagger/ui/abp.js'. Physical path: 'N/A'
+2025-06-17 13:53:16.017 +05:45 [INF] Request finished HTTP/2 GET https://localhost:44377/swagger/ui/abp.js - 200 3122 application/javascript 146.6858ms
+2025-06-17 13:53:16.018 +05:45 [INF] Request finished HTTP/2 GET https://localhost:44377/swagger/index.css - 200 202 text/css 147.9655ms
+2025-06-17 13:53:16.029 +05:45 [INF] Sending file. Request path: '/swagger/ui/abp.swagger.js'. Physical path: 'N/A'
+2025-06-17 13:53:16.029 +05:45 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-06-17 13:53:16.029 +05:45 [INF] Request finished HTTP/2 GET https://localhost:44377/swagger/ui/abp.swagger.js - 200 4668 application/javascript 89.2151ms
+2025-06-17 13:53:16.029 +05:45 [INF] Request finished HTTP/2 GET https://localhost:44377/swagger/swagger-ui.css - 200 152034 text/css 166.2055ms
+2025-06-17 13:53:16.029 +05:45 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-06-17 13:53:16.031 +05:45 [INF] Request finished HTTP/2 GET https://localhost:44377/swagger/swagger-ui-standalone-preset.js - 200 230293 text/javascript 45.4864ms
+2025-06-17 13:53:16.042 +05:45 [INF] Request starting HTTP/2 GET https://localhost:44377/_vs/browserLink - null null
+2025-06-17 13:53:16.056 +05:45 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-06-17 13:53:16.056 +05:45 [INF] Request finished HTTP/2 GET https://localhost:44377/swagger/swagger-ui-bundle.js - 200 1452753 text/javascript 126.3205ms
+2025-06-17 13:53:16.075 +05:45 [INF] Request finished HTTP/2 GET https://localhost:44377/_vs/browserLink - 200 null text/javascript; charset=UTF-8 33.2276ms
+2025-06-17 13:53:16.291 +05:45 [INF] Request starting HTTP/2 GET https://localhost:44377/swagger/v1/swagger.json - null null
+2025-06-17 13:53:16.329 +05:45 [INF] Request starting HTTP/2 GET https://localhost:44377/swagger/favicon-32x32.png - null null
+2025-06-17 13:53:16.333 +05:45 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2025-06-17 13:53:16.333 +05:45 [INF] Request finished HTTP/2 GET https://localhost:44377/swagger/favicon-32x32.png - 200 628 image/png 3.534ms
+2025-06-17 13:53:16.503 +05:45 [INF] Request finished HTTP/2 GET https://localhost:44377/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 212.5352ms
+2025-06-17 13:53:21.996 +05:45 [INF] Request starting HTTP/2 GET https://localhost:44377/api/app/item - null null
+2025-06-17 13:53:22.005 +05:45 [INF] Executing endpoint 'RateLimit.AppServices.ItemAppService.GetAllAsync (RateLimit.Application)'
+2025-06-17 13:53:22.005 +05:45 [INF] Route matched with {action = "GetAll", controller = "Item", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[RateLimit.ResponseModels.ResponseModel`1[System.Collections.Generic.List`1[RateLimit.Interfaces.Dtos.ItemDto]]] GetAllAsync() on controller RateLimit.AppServices.ItemAppService (RateLimit.Application).
+2025-06-17 13:53:22.008 +05:45 [INF] ItemAppService - GetAllAsync called }
+2025-06-17 13:53:22.018 +05:45 [INF] Executing ObjectResult, writing value of type 'RateLimit.ResponseModels.ResponseModel`1[[System.Collections.Generic.List`1[[RateLimit.Interfaces.Dtos.ItemDto, RateLimit.Application.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-06-17 13:53:22.019 +05:45 [INF] Executed action RateLimit.AppServices.ItemAppService.GetAllAsync (RateLimit.Application) in 13.4857ms
+2025-06-17 13:53:22.019 +05:45 [INF] Executed endpoint 'RateLimit.AppServices.ItemAppService.GetAllAsync (RateLimit.Application)'
+2025-06-17 13:53:22.019 +05:45 [INF] Request finished HTTP/2 GET https://localhost:44377/api/app/item - 200 null application/json; charset=utf-8 23.0268ms
+2025-06-17 14:27:53.777 +05:45 [INF] Request starting HTTP/2 POST https://localhost:44377/api/app/item - application/json 35
+2025-06-17 14:27:53.784 +05:45 [INF] CORS policy execution failed.
+2025-06-17 14:27:53.784 +05:45 [INF] Request origin https://localhost:44377 does not have permission to access the resource.
+2025-06-17 14:27:53.788 +05:45 [INF] Executing endpoint 'RateLimit.AppServices.ItemAppService.CreateAsync (RateLimit.Application)'
+2025-06-17 14:27:53.802 +05:45 [INF] Route matched with {action = "Create", controller = "Item", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[RateLimit.ResponseModels.ResponseModel`1[RateLimit.Interfaces.Dtos.CreateItemResponseDto]] CreateAsync(RateLimit.Interfaces.Dtos.CreateUpdateItemDto) on controller RateLimit.AppServices.ItemAppService (RateLimit.Application).
+2025-06-17 14:27:53.869 +05:45 [DBG] ItemAppService - CreateAsync with input: {"Name":"BOt","Price":299,"$type":"CreateUpdateItemDto"}
+2025-06-17 14:27:53.958 +05:45 [DBG] ItemAppService - CreateAsync response: {"Success":true,"Message":"Item has been created.","Data":{"Id":"3a1a8f3b-1256-0147-7d17-4a01ec3c951b","$type":"CreateItemResponseDto"},"Errors":null,"$type":"ResponseModel`1"}
+2025-06-17 14:27:53.958 +05:45 [INF] ItemAppService - CreateAsync completed successfully.
+2025-06-17 14:27:54.077 +05:45 [INF] Executing ObjectResult, writing value of type 'RateLimit.ResponseModels.ResponseModel`1[[RateLimit.Interfaces.Dtos.CreateItemResponseDto, RateLimit.Application.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-17 14:27:54.079 +05:45 [INF] Executed action RateLimit.AppServices.ItemAppService.CreateAsync (RateLimit.Application) in 277.0252ms
+2025-06-17 14:27:54.079 +05:45 [INF] Executed endpoint 'RateLimit.AppServices.ItemAppService.CreateAsync (RateLimit.Application)'
+2025-06-17 14:27:54.308 +05:45 [INF] Request finished HTTP/2 POST https://localhost:44377/api/app/item - 200 null application/json; charset=utf-8 530.1965ms
+2025-06-17 14:28:00.615 +05:45 [INF] Request starting HTTP/2 POST https://localhost:44377/api/app/item - application/json 38
+2025-06-17 14:28:00.616 +05:45 [INF] CORS policy execution failed.
+2025-06-17 14:28:00.616 +05:45 [INF] Request origin https://localhost:44377 does not have permission to access the resource.
+2025-06-17 14:28:00.617 +05:45 [INF] Executing endpoint 'RateLimit.AppServices.ItemAppService.CreateAsync (RateLimit.Application)'
+2025-06-17 14:28:00.617 +05:45 [INF] Route matched with {action = "Create", controller = "Item", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[RateLimit.ResponseModels.ResponseModel`1[RateLimit.Interfaces.Dtos.CreateItemResponseDto]] CreateAsync(RateLimit.Interfaces.Dtos.CreateUpdateItemDto) on controller RateLimit.AppServices.ItemAppService (RateLimit.Application).
+2025-06-17 14:28:00.620 +05:45 [DBG] ItemAppService - CreateAsync with input: {"Name":"Tissue","Price":199,"$type":"CreateUpdateItemDto"}
+2025-06-17 14:28:00.623 +05:45 [DBG] ItemAppService - CreateAsync response: {"Success":true,"Message":"Item has been created.","Data":{"Id":"3a1a8f3b-2c8e-4288-d9d9-ae1d80faf651","$type":"CreateItemResponseDto"},"Errors":null,"$type":"ResponseModel`1"}
+2025-06-17 14:28:00.623 +05:45 [INF] ItemAppService - CreateAsync completed successfully.
+2025-06-17 14:28:00.626 +05:45 [INF] Executing ObjectResult, writing value of type 'RateLimit.ResponseModels.ResponseModel`1[[RateLimit.Interfaces.Dtos.CreateItemResponseDto, RateLimit.Application.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-17 14:28:00.626 +05:45 [INF] Executed action RateLimit.AppServices.ItemAppService.CreateAsync (RateLimit.Application) in 9.2995ms
+2025-06-17 14:28:00.626 +05:45 [INF] Executed endpoint 'RateLimit.AppServices.ItemAppService.CreateAsync (RateLimit.Application)'
+2025-06-17 14:28:00.633 +05:45 [INF] Request finished HTTP/2 POST https://localhost:44377/api/app/item - 200 null application/json; charset=utf-8 18.5246ms
+2025-06-17 14:28:08.874 +05:45 [INF] Request starting HTTP/2 POST https://localhost:44377/api/app/item - application/json 36
+2025-06-17 14:28:08.874 +05:45 [INF] CORS policy execution failed.
+2025-06-17 14:28:08.874 +05:45 [INF] Request origin https://localhost:44377 does not have permission to access the resource.
+2025-06-17 14:28:08.876 +05:45 [INF] Executing endpoint 'RateLimit.AppServices.ItemAppService.CreateAsync (RateLimit.Application)'
+2025-06-17 14:28:08.876 +05:45 [INF] Route matched with {action = "Create", controller = "Item", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[RateLimit.ResponseModels.ResponseModel`1[RateLimit.Interfaces.Dtos.CreateItemResponseDto]] CreateAsync(RateLimit.Interfaces.Dtos.CreateUpdateItemDto) on controller RateLimit.AppServices.ItemAppService (RateLimit.Application).
+2025-06-17 14:28:08.877 +05:45 [DBG] ItemAppService - CreateAsync with input: {"Name":"Diary","Price":55,"$type":"CreateUpdateItemDto"}
+2025-06-17 14:28:08.879 +05:45 [DBG] ItemAppService - CreateAsync response: {"Success":true,"Message":"Item has been created.","Data":{"Id":"3a1a8f3b-4cce-0eeb-453c-a203dd1e0eb4","$type":"CreateItemResponseDto"},"Errors":null,"$type":"ResponseModel`1"}
+2025-06-17 14:28:08.879 +05:45 [INF] ItemAppService - CreateAsync completed successfully.
+2025-06-17 14:28:08.882 +05:45 [INF] Executing ObjectResult, writing value of type 'RateLimit.ResponseModels.ResponseModel`1[[RateLimit.Interfaces.Dtos.CreateItemResponseDto, RateLimit.Application.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-17 14:28:08.882 +05:45 [INF] Executed action RateLimit.AppServices.ItemAppService.CreateAsync (RateLimit.Application) in 6.8053ms
+2025-06-17 14:28:08.883 +05:45 [INF] Executed endpoint 'RateLimit.AppServices.ItemAppService.CreateAsync (RateLimit.Application)'
+2025-06-17 14:28:08.895 +05:45 [INF] Request finished HTTP/2 POST https://localhost:44377/api/app/item - 200 null application/json; charset=utf-8 20.6249ms
+2025-06-17 14:28:23.015 +05:45 [INF] Request starting HTTP/2 GET https://localhost:44377/api/app/item/3a1a8f3b-4cce-0eeb-453c-a203dd1e0eb4 - null null
+2025-06-17 14:28:23.063 +05:45 [INF] Executing endpoint 'RateLimit.AppServices.ItemAppService.GetAsync (RateLimit.Application)'
+2025-06-17 14:28:23.079 +05:45 [INF] Route matched with {action = "Get", controller = "Item", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[RateLimit.ResponseModels.ResponseModel`1[RateLimit.Interfaces.Dtos.ItemDto]] GetAsync(System.Guid) on controller RateLimit.AppServices.ItemAppService (RateLimit.Application).
+2025-06-17 14:28:23.090 +05:45 [INF] ItemAppService - GetAsync called with Id: "3a1a8f3b-4cce-0eeb-453c-a203dd1e0eb4"
+2025-06-17 14:28:23.106 +05:45 [INF] Cache miss for key: ITEM_CACHE_KEY
+2025-06-17 14:28:23.180 +05:45 [DBG] ItemAppService - GetAsync response: {"Success":true,"Message":"Item has been retrieved.","Data":{"Id":"3a1a8f3b-4cce-0eeb-453c-a203dd1e0eb4","Name":"Diary","Price":55,"$type":"ItemDto"},"Errors":null,"$type":"ResponseModel`1"}
+2025-06-17 14:28:23.180 +05:45 [INF] ItemAppService - GetAsync completed successfully.
+2025-06-17 14:28:23.183 +05:45 [INF] Executing ObjectResult, writing value of type 'RateLimit.ResponseModels.ResponseModel`1[[RateLimit.Interfaces.Dtos.ItemDto, RateLimit.Application.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-17 14:28:23.186 +05:45 [INF] Executed action RateLimit.AppServices.ItemAppService.GetAsync (RateLimit.Application) in 107.2328ms
+2025-06-17 14:28:23.186 +05:45 [INF] Executed endpoint 'RateLimit.AppServices.ItemAppService.GetAsync (RateLimit.Application)'
+2025-06-17 14:28:23.187 +05:45 [INF] Request finished HTTP/2 GET https://localhost:44377/api/app/item/3a1a8f3b-4cce-0eeb-453c-a203dd1e0eb4 - 200 null application/json; charset=utf-8 171.9913ms
+2025-06-17 14:28:29.637 +05:45 [INF] Request starting HTTP/2 DELETE https://localhost:44377/api/app/item/3a1a8f3b-4cce-0eeb-453c-a203dd1e0eb4 - null null
+2025-06-17 14:28:29.638 +05:45 [INF] CORS policy execution failed.
+2025-06-17 14:28:29.638 +05:45 [INF] Request origin https://localhost:44377 does not have permission to access the resource.
+2025-06-17 14:28:29.639 +05:45 [INF] Executing endpoint 'RateLimit.AppServices.ItemAppService.DeleteAsync (RateLimit.Application)'
+2025-06-17 14:28:29.642 +05:45 [INF] Route matched with {action = "Delete", controller = "Item", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[RateLimit.ResponseModels.ResponseModel] DeleteAsync(System.Guid) on controller RateLimit.AppServices.ItemAppService (RateLimit.Application).
+2025-06-17 14:28:33.948 +05:45 [INF] ItemAppService - DeleteAsync called with Id: "3a1a8f3b-4cce-0eeb-453c-a203dd1e0eb4"
+2025-06-17 14:28:34.087 +05:45 [DBG] ItemAppService - DeleteAsync response: {"Success":true,"Message":"Item has been deleted.","$type":"ResponseModel"}
+2025-06-17 14:28:34.087 +05:45 [INF] ItemAppService - DeleteAsync completed successfully.
+2025-06-17 14:28:34.102 +05:45 [INF] Executing ObjectResult, writing value of type 'RateLimit.ResponseModels.ResponseModel'.
+2025-06-17 14:28:34.103 +05:45 [INF] Executed action RateLimit.AppServices.ItemAppService.DeleteAsync (RateLimit.Application) in 4460.6321ms
+2025-06-17 14:28:34.103 +05:45 [INF] Executed endpoint 'RateLimit.AppServices.ItemAppService.DeleteAsync (RateLimit.Application)'
+2025-06-17 14:28:34.110 +05:45 [INF] Request finished HTTP/2 DELETE https://localhost:44377/api/app/item/3a1a8f3b-4cce-0eeb-453c-a203dd1e0eb4 - 200 null application/json; charset=utf-8 4473.5095ms
+2025-06-17 14:28:39.229 +05:45 [INF] Request starting HTTP/2 POST https://localhost:44377/api/app/item - application/json 36
+2025-06-17 14:28:39.229 +05:45 [INF] CORS policy execution failed.
+2025-06-17 14:28:39.229 +05:45 [INF] Request origin https://localhost:44377 does not have permission to access the resource.
+2025-06-17 14:28:39.230 +05:45 [INF] Executing endpoint 'RateLimit.AppServices.ItemAppService.CreateAsync (RateLimit.Application)'
+2025-06-17 14:28:39.230 +05:45 [INF] Route matched with {action = "Create", controller = "Item", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[RateLimit.ResponseModels.ResponseModel`1[RateLimit.Interfaces.Dtos.CreateItemResponseDto]] CreateAsync(RateLimit.Interfaces.Dtos.CreateUpdateItemDto) on controller RateLimit.AppServices.ItemAppService (RateLimit.Application).
+2025-06-17 14:28:39.232 +05:45 [DBG] ItemAppService - CreateAsync with input: {"Name":"Diary","Price":55,"$type":"CreateUpdateItemDto"}
+2025-06-17 14:28:39.234 +05:45 [DBG] ItemAppService - CreateAsync response: {"Success":true,"Message":"Item has been created.","Data":{"Id":"3a1a8f3b-c361-3c27-21b5-26db47d01231","$type":"CreateItemResponseDto"},"Errors":null,"$type":"ResponseModel`1"}
+2025-06-17 14:28:39.234 +05:45 [INF] ItemAppService - CreateAsync completed successfully.
+2025-06-17 14:28:39.237 +05:45 [INF] Executing ObjectResult, writing value of type 'RateLimit.ResponseModels.ResponseModel`1[[RateLimit.Interfaces.Dtos.CreateItemResponseDto, RateLimit.Application.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-17 14:28:39.237 +05:45 [INF] Executed action RateLimit.AppServices.ItemAppService.CreateAsync (RateLimit.Application) in 6.5973ms
+2025-06-17 14:28:39.237 +05:45 [INF] Executed endpoint 'RateLimit.AppServices.ItemAppService.CreateAsync (RateLimit.Application)'
+2025-06-17 14:28:39.246 +05:45 [INF] Request finished HTTP/2 POST https://localhost:44377/api/app/item - 200 null application/json; charset=utf-8 17.2095ms
+2025-06-17 14:29:01.584 +05:45 [INF] Request starting HTTP/2 POST https://localhost:44377/api/app/item/upload-file - multipart/form-data; boundary=----WebKitFormBoundaryL35Eh8yooHtNP2AF 2018665
+2025-06-17 14:29:01.584 +05:45 [INF] CORS policy execution failed.
+2025-06-17 14:29:01.584 +05:45 [INF] Request origin https://localhost:44377 does not have permission to access the resource.
+2025-06-17 14:29:01.587 +05:45 [INF] Executing endpoint 'RateLimit.AppServices.ItemAppService.UploadFileAsync (RateLimit.Application)'
+2025-06-17 14:29:01.594 +05:45 [INF] Route matched with {action = "UploadFile", controller = "Item", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[RateLimit.ResponseModels.ResponseModel] UploadFileAsync(Microsoft.AspNetCore.Http.IFormFile) on controller RateLimit.AppServices.ItemAppService (RateLimit.Application).
+2025-06-17 14:29:01.718 +05:45 [INF] ItemAppService - UploadFileAsync with File: {"ContentDisposition":"form-data; name=\"file\"; filename=\"pexels-vladbagacian-1368382.jpg\"","ContentType":"image/jpeg","Headers":[{"Key":"Content-Disposition","Value":["form-data; name=\"file\"; filename=\"pexels-vladbagacian-1368382.jpg\""],"$type":"KeyValuePair`2"},{"Key":"Content-Type","Value":["image/jpeg"],"$type":"KeyValuePair`2"}],"Length":2018460,"Name":"file","FileName":"pexels-vladbagacian-1368382.jpg","$type":"FormFile"}
+2025-06-17 14:29:04.711 +05:45 [WRN] ---------- RemoteServiceErrorInfo ----------
+{
+  "code": null,
+  "message": "File type '.jpg' is not allowed.",
+  "details": null,
+  "data": {},
+  "validationErrors": null
+}
+
+2025-06-17 14:29:04.712 +05:45 [WRN] File type '.jpg' is not allowed.
+Volo.Abp.UserFriendlyException: File type '.jpg' is not allowed.
+   at RateLimit.AppServices.ItemAppService.UploadFileAsync(IFormFile file) in C:\AMNIL\Mentorship\Rate-Limit\src\RateLimit.Application\AppServices\ItemAppService.cs:line 278
+   at lambda_method2540(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|26_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+2025-06-17 14:29:04.712 +05:45 [WRN] Code:
+2025-06-17 14:29:04.712 +05:45 [WRN] Details:
+2025-06-17 14:29:04.726 +05:45 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.Http.RemoteServiceErrorResponse'.
+2025-06-17 14:29:04.738 +05:45 [INF] Executed action RateLimit.AppServices.ItemAppService.UploadFileAsync (RateLimit.Application) in 3143.884ms
+2025-06-17 14:29:04.738 +05:45 [INF] Executed endpoint 'RateLimit.AppServices.ItemAppService.UploadFileAsync (RateLimit.Application)'
+2025-06-17 14:29:04.752 +05:45 [INF] Request finished HTTP/2 POST https://localhost:44377/api/app/item/upload-file - 403 null application/json; charset=utf-8 3168.1486ms
+2025-06-17 14:30:18.406 +05:45 [INF] Request starting HTTP/2 POST https://localhost:44377/api/app/item/upload-file - multipart/form-data; boundary=----WebKitFormBoundaryXhgAdHazgJZiBuHZ 49530
+2025-06-17 14:30:18.406 +05:45 [INF] CORS policy execution failed.
+2025-06-17 14:30:18.406 +05:45 [INF] Request origin https://localhost:44377 does not have permission to access the resource.
+2025-06-17 14:30:18.408 +05:45 [INF] Executing endpoint 'RateLimit.AppServices.ItemAppService.UploadFileAsync (RateLimit.Application)'
+2025-06-17 14:30:18.408 +05:45 [INF] Route matched with {action = "UploadFile", controller = "Item", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[RateLimit.ResponseModels.ResponseModel] UploadFileAsync(Microsoft.AspNetCore.Http.IFormFile) on controller RateLimit.AppServices.ItemAppService (RateLimit.Application).
+2025-06-17 14:30:18.412 +05:45 [INF] ItemAppService - UploadFileAsync with File: {"ContentDisposition":"form-data; name=\"file\"; filename=\"Book1.xlsx\"","ContentType":"application/vnd.openxmlformats-officedocument.spreadsheetml.sheet","Headers":[{"Key":"Content-Disposition","Value":["form-data; name=\"file\"; filename=\"Book1.xlsx\""],"$type":"KeyValuePair`2"},{"Key":"Content-Type","Value":["application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"],"$type":"KeyValuePair`2"}],"Length":49291,"Name":"file","FileName":"Book1.xlsx","$type":"FormFile"}
+2025-06-17 14:30:18.441 +05:45 [DBG] ItemAppService - UploadFileAsync response: {"Success":true,"Message":"Item has been updated.","$type":"ResponseModel"}
+2025-06-17 14:30:18.441 +05:45 [INF] ItemAppService - UploadFileAsync completed successfully.
+2025-06-17 14:30:18.441 +05:45 [INF] Executing ObjectResult, writing value of type 'RateLimit.ResponseModels.ResponseModel'.
+2025-06-17 14:30:18.441 +05:45 [INF] Executed action RateLimit.AppServices.ItemAppService.UploadFileAsync (RateLimit.Application) in 33.348ms
+2025-06-17 14:30:18.441 +05:45 [INF] Executed endpoint 'RateLimit.AppServices.ItemAppService.UploadFileAsync (RateLimit.Application)'
+2025-06-17 14:30:18.488 +05:45 [INF] Request finished HTTP/2 POST https://localhost:44377/api/app/item/upload-file - 200 null application/json; charset=utf-8 82.295ms
